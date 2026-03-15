@@ -44,6 +44,17 @@ def cmd_load(args: argparse.Namespace) -> None:
             Neo4jLoader(data_dir).load_all()
 
 
+def cmd_benchmark(args: argparse.Namespace) -> None:
+    from src.benchmarks.runner import run_benchmarks
+
+    databases = (
+        ["postgres", "mysql", "mongo", "neo4j"]
+        if args.database == "all"
+        else [args.database]
+    )
+    run_benchmarks(args.volume, databases, args.trials, args.output_dir, args.phase)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="VOD Platform — ZTBD Project")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -88,12 +99,46 @@ def main() -> None:
         help="Base directory with generated CSV data (default: data/)",
     )
 
+    bench = subparsers.add_parser("benchmark", help="Run CRUD benchmarks (24 scenarios)")
+    bench.add_argument(
+        "--volume",
+        choices=VOLUMES.keys(),
+        default="small",
+        help="Data volume loaded in databases (default: small)",
+    )
+    bench.add_argument(
+        "--database",
+        choices=["all", "postgres", "mysql", "mongo", "neo4j"],
+        default="all",
+        help="Target database (default: all)",
+    )
+    bench.add_argument(
+        "--trials",
+        type=int,
+        default=3,
+        help="Number of trials per scenario (default: 3)",
+    )
+    bench.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path("results"),
+        help="Directory for CSV results (default: results/)",
+    )
+    bench.add_argument(
+        "--phase",
+        choices=["all", "insert", "select", "update", "delete"],
+        default="all",
+        help="Ktora faza CRUD do uruchomienia (default: all)",
+    )
+
     args = parser.parse_args()
 
     if args.command == "generate":
         cmd_generate(args)
     elif args.command == "load":
         cmd_load(args)
+    elif args.command == "benchmark":
+        cmd_benchmark(args)
 
 
 if __name__ == "__main__":
