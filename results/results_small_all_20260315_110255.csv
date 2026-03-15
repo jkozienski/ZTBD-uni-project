@@ -1,0 +1,259 @@
+scenario_id,name,category,database,volume,trial,time_ms
+I1,Rejestracja uzytkownika (multi-table),INSERT,postgres,small,1,7.499
+I1,Rejestracja uzytkownika (multi-table),INSERT,postgres,small,2,3.931
+I1,Rejestracja uzytkownika (multi-table),INSERT,postgres,small,3,3.891
+I2,Batch insert watch_history (1000 rekordow),INSERT,postgres,small,1,54.125
+I2,Batch insert watch_history (1000 rekordow),INSERT,postgres,small,2,24.195
+I2,Batch insert watch_history (1000 rekordow),INSERT,postgres,small,3,24.296
+I3,Dodanie serialu z drzewem (content+seasons+episodes+cast),INSERT,postgres,small,1,8.848
+I3,Dodanie serialu z drzewem (content+seasons+episodes+cast),INSERT,postgres,small,2,7.285
+I3,Dodanie serialu z drzewem (content+seasons+episodes+cast),INSERT,postgres,small,3,7.069
+I4,Batch insert platnosci (1000 rekordow),INSERT,postgres,small,1,22.503
+I4,Batch insert platnosci (1000 rekordow),INSERT,postgres,small,2,20.949
+I4,Batch insert platnosci (1000 rekordow),INSERT,postgres,small,3,22.953
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,postgres,small,1,4.612
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,postgres,small,2,4.969
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,postgres,small,3,3.13
+I6,Import osob z powiazaniami (100 osob),INSERT,postgres,small,1,90.677
+I6,Import osob z powiazaniami (100 osob),INSERT,postgres,small,2,90.833
+I6,Import osob z powiazaniami (100 osob),INSERT,postgres,small,3,88.567
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,postgres,small,1,1.28
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,postgres,small,2,0.567
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,postgres,small,3,0.619
+S2,Rekomendacje collaborative filtering,SELECT,postgres,small,1,12.292
+S2,Rekomendacje collaborative filtering,SELECT,postgres,small,2,11.386
+S2,Rekomendacje collaborative filtering,SELECT,postgres,small,3,10.808
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,postgres,small,1,7.012
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,postgres,small,2,6.361
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,postgres,small,3,6.085
+S4,Wyszukiwanie pelnotekstowe po tytule (ILIKE),SELECT,postgres,small,1,1.065
+S4,Wyszukiwanie pelnotekstowe po tytule (ILIKE),SELECT,postgres,small,2,0.711
+S4,Wyszukiwanie pelnotekstowe po tytule (ILIKE),SELECT,postgres,small,3,0.642
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,postgres,small,1,3.232
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,postgres,small,2,2.471
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,postgres,small,3,2.373
+S6,Filmografia osoby (JOIN people->content),SELECT,postgres,small,1,1.248
+S6,Filmografia osoby (JOIN people->content),SELECT,postgres,small,2,0.734
+S6,Filmografia osoby (JOIN people->content),SELECT,postgres,small,3,0.697
+U1,Aktualizacja postepu ogladania,UPDATE,postgres,small,1,3.635
+U1,Aktualizacja postepu ogladania,UPDATE,postgres,small,2,3.192
+U1,Aktualizacja postepu ogladania,UPDATE,postgres,small,3,3.089
+U2,Przeliczenie avg_rating (podzapytanie AVG),UPDATE,postgres,small,1,2.913
+U2,Przeliczenie avg_rating (podzapytanie AVG),UPDATE,postgres,small,2,2.802
+U2,Przeliczenie avg_rating (podzapytanie AVG),UPDATE,postgres,small,3,3.455
+I1,Rejestracja uzytkownika (multi-table),INSERT,mysql,small,1,9.795
+I1,Rejestracja uzytkownika (multi-table),INSERT,mysql,small,2,11.94
+I1,Rejestracja uzytkownika (multi-table),INSERT,mysql,small,3,11.97
+I2,Batch insert watch_history (1000 rekordow),INSERT,mysql,small,1,21.659
+I2,Batch insert watch_history (1000 rekordow),INSERT,mysql,small,2,67.852
+I2,Batch insert watch_history (1000 rekordow),INSERT,mysql,small,3,61.966
+I3,Dodanie serialu z drzewem (content+seasons+episodes+cast),INSERT,mysql,small,1,17.398
+I3,Dodanie serialu z drzewem (content+seasons+episodes+cast),INSERT,mysql,small,2,17.615
+I3,Dodanie serialu z drzewem (content+seasons+episodes+cast),INSERT,mysql,small,3,15.565
+I4,Batch insert platnosci (1000 rekordow),INSERT,mysql,small,1,72.513
+I4,Batch insert platnosci (1000 rekordow),INSERT,mysql,small,2,66.138
+I4,Batch insert platnosci (1000 rekordow),INSERT,mysql,small,3,66.834
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,mysql,small,1,11.372
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,mysql,small,2,9.77
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,mysql,small,3,11.602
+I6,Import osob z powiazaniami (100 osob),INSERT,mysql,small,1,18.411
+I6,Import osob z powiazaniami (100 osob),INSERT,mysql,small,2,22.721
+I6,Import osob z powiazaniami (100 osob),INSERT,mysql,small,3,16.561
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,mysql,small,1,0.812
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,mysql,small,2,0.686
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,mysql,small,3,0.66
+S2,Rekomendacje collaborative filtering,SELECT,mysql,small,1,8.136
+S2,Rekomendacje collaborative filtering,SELECT,mysql,small,2,4.058
+S2,Rekomendacje collaborative filtering,SELECT,mysql,small,3,2.974
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,mysql,small,1,7.666
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,mysql,small,2,8.219
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,mysql,small,3,7.736
+S4,Wyszukiwanie pelnotekstowe po tytule (LIKE),SELECT,mysql,small,1,0.946
+S4,Wyszukiwanie pelnotekstowe po tytule (LIKE),SELECT,mysql,small,2,0.738
+S4,Wyszukiwanie pelnotekstowe po tytule (LIKE),SELECT,mysql,small,3,0.609
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,mysql,small,1,0.963
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,mysql,small,2,0.867
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,mysql,small,3,1.062
+S6,Filmografia osoby (JOIN people->content),SELECT,mysql,small,1,0.575
+S6,Filmografia osoby (JOIN people->content),SELECT,mysql,small,2,0.552
+S6,Filmografia osoby (JOIN people->content),SELECT,mysql,small,3,0.583
+U1,Aktualizacja postepu ogladania,UPDATE,mysql,small,1,8.77
+U1,Aktualizacja postepu ogladania,UPDATE,mysql,small,2,12.943
+U1,Aktualizacja postepu ogladania,UPDATE,mysql,small,3,46.764
+U2,Przeliczenie avg_rating (podzapytanie AVG),UPDATE,mysql,small,1,15.328
+U2,Przeliczenie avg_rating (podzapytanie AVG),UPDATE,mysql,small,2,1.065
+U2,Przeliczenie avg_rating (podzapytanie AVG),UPDATE,mysql,small,3,1.19
+U3,Masowa zmiana planu subskrypcji (500 rekordow),UPDATE,mysql,small,1,21.941
+U3,Masowa zmiana planu subskrypcji (500 rekordow),UPDATE,mysql,small,2,28.103
+U3,Masowa zmiana planu subskrypcji (500 rekordow),UPDATE,mysql,small,3,13.799
+U4,Aktualizacja danych uzytkownika (email+phone),UPDATE,mysql,small,1,10.874
+U4,Aktualizacja danych uzytkownika (email+phone),UPDATE,mysql,small,2,11.039
+U4,Aktualizacja danych uzytkownika (email+phone),UPDATE,mysql,small,3,13.645
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,mysql,small,1,9.216
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,mysql,small,2,9.21
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,mysql,small,3,9.548
+U6,Masowa aktualizacja popularity_score (formula),UPDATE,mysql,small,1,15.793
+U6,Masowa aktualizacja popularity_score (formula),UPDATE,mysql,small,2,1.276
+U6,Masowa aktualizacja popularity_score (formula),UPDATE,mysql,small,3,1.181
+D1,Usuniecie tresci z kaskada (CASCADE),DELETE,mysql,small,1,10.162
+D1,Usuniecie tresci z kaskada (CASCADE),DELETE,mysql,small,2,19.963
+D1,Usuniecie tresci z kaskada (CASCADE),DELETE,mysql,small,3,13.911
+D2,Usuniecie profilu z historia (CASCADE),DELETE,mysql,small,1,12.111
+D2,Usuniecie profilu z historia (CASCADE),DELETE,mysql,small,2,10.023
+D2,Usuniecie profilu z historia (CASCADE),DELETE,mysql,small,3,9.816
+D3,Czyszczenie starej historii ogladania,DELETE,mysql,small,1,11.943
+D3,Czyszczenie starej historii ogladania,DELETE,mysql,small,2,14.1
+D3,Czyszczenie starej historii ogladania,DELETE,mysql,small,3,14.01
+D4,Usuniecie pozycji z my_list,DELETE,mysql,small,1,11.938
+D4,Usuniecie pozycji z my_list,DELETE,mysql,small,2,12.049
+D4,Usuniecie pozycji z my_list,DELETE,mysql,small,3,10.056
+D5,Usuniecie subskrypcji z platnosciami (CASCADE),DELETE,mysql,small,1,9.946
+D5,Usuniecie subskrypcji z platnosciami (CASCADE),DELETE,mysql,small,2,11.975
+D5,Usuniecie subskrypcji z platnosciami (CASCADE),DELETE,mysql,small,3,11.839
+D6,Masowe usuniecie uzytkownikow status=deleted,DELETE,mysql,small,1,12.131
+D6,Masowe usuniecie uzytkownikow status=deleted,DELETE,mysql,small,2,12.035
+D6,Masowe usuniecie uzytkownikow status=deleted,DELETE,mysql,small,3,14.182
+I1,Rejestracja uzytkownika (embedded doc),INSERT,mongo,small,1,1.566
+I1,Rejestracja uzytkownika (embedded doc),INSERT,mongo,small,2,0.591
+I1,Rejestracja uzytkownika (embedded doc),INSERT,mongo,small,3,0.587
+I2,Batch insert watch_history (1000 rekordow),INSERT,mongo,small,1,10.133
+I2,Batch insert watch_history (1000 rekordow),INSERT,mongo,small,2,7.921
+I2,Batch insert watch_history (1000 rekordow),INSERT,mongo,small,3,7.848
+I3,Dodanie serialu z drzewem (embedded cast+seasons),INSERT,mongo,small,1,2.783
+I3,Dodanie serialu z drzewem (embedded cast+seasons),INSERT,mongo,small,2,1.429
+I3,Dodanie serialu z drzewem (embedded cast+seasons),INSERT,mongo,small,3,1.313
+I4,Batch insert platnosci (1000 rekordow),INSERT,mongo,small,1,10.34
+I4,Batch insert platnosci (1000 rekordow),INSERT,mongo,small,2,9.977
+I4,Batch insert platnosci (1000 rekordow),INSERT,mongo,small,3,11.105
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,mongo,small,1,4.178
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,mongo,small,2,2.195
+I5,Dodanie oceny z przeliczeniem avg_rating,INSERT,mongo,small,3,2.163
+I6,Import osob z powiazaniami (100 embedded cast),INSERT,mongo,small,1,43.356
+I6,Import osob z powiazaniami (100 embedded cast),INSERT,mongo,small,2,37.636
+I6,Import osob z powiazaniami (100 embedded cast),INSERT,mongo,small,3,33.989
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,mongo,small,1,0.977
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,mongo,small,2,0.746
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,mongo,small,3,0.789
+S2,Rekomendacje collaborative filtering,SELECT,mongo,small,1,12.056
+S2,Rekomendacje collaborative filtering,SELECT,mongo,small,2,10.061
+S2,Rekomendacje collaborative filtering,SELECT,mongo,small,3,9.732
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,mongo,small,1,8.543
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,mongo,small,2,7.816
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,mongo,small,3,7.799
+S4,Wyszukiwanie po tytule (regex ILIKE),SELECT,mongo,small,1,1.404
+S4,Wyszukiwanie po tytule (regex ILIKE),SELECT,mongo,small,2,1.11
+S4,Wyszukiwanie po tytule (regex ILIKE),SELECT,mongo,small,3,1.125
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,mongo,small,1,1.882
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,mongo,small,2,1.843
+S5,Historia ogladania profilu (50 ostatnich z JOIN),SELECT,mongo,small,3,1.72
+S6,Filmografia osoby (embedded cast lookup),SELECT,mongo,small,1,1.54
+S6,Filmografia osoby (embedded cast lookup),SELECT,mongo,small,2,1.548
+S6,Filmografia osoby (embedded cast lookup),SELECT,mongo,small,3,1.407
+U1,Aktualizacja postepu ogladania,UPDATE,mongo,small,1,0.668
+U1,Aktualizacja postepu ogladania,UPDATE,mongo,small,2,0.556
+U1,Aktualizacja postepu ogladania,UPDATE,mongo,small,3,0.567
+U2,Przeliczenie avg_rating (aggregation pipeline),UPDATE,mongo,small,1,1.489
+U2,Przeliczenie avg_rating (aggregation pipeline),UPDATE,mongo,small,2,1.41
+U2,Przeliczenie avg_rating (aggregation pipeline),UPDATE,mongo,small,3,1.368
+U3,Masowa zmiana planu subskrypcji (500 dokumentow),UPDATE,mongo,small,1,3.939
+U3,Masowa zmiana planu subskrypcji (500 dokumentow),UPDATE,mongo,small,2,3.99
+U3,Masowa zmiana planu subskrypcji (500 dokumentow),UPDATE,mongo,small,3,4.33
+U4,Aktualizacja danych uzytkownika (email+phone),UPDATE,mongo,small,1,0.667
+U4,Aktualizacja danych uzytkownika (email+phone),UPDATE,mongo,small,2,0.585
+U4,Aktualizacja danych uzytkownika (email+phone),UPDATE,mongo,small,3,0.565
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,mongo,small,1,0.594
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,mongo,small,2,0.589
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,mongo,small,3,0.54
+U6,Masowa aktualizacja popularity_score (bulk_write),UPDATE,mongo,small,1,12.846
+U6,Masowa aktualizacja popularity_score (bulk_write),UPDATE,mongo,small,2,8.767
+U6,Masowa aktualizacja popularity_score (bulk_write),UPDATE,mongo,small,3,14.524
+D1,Usuniecie tresci (brak CASCADE — reczne czyszczenie),DELETE,mongo,small,1,10.685
+D1,Usuniecie tresci (brak CASCADE — reczne czyszczenie),DELETE,mongo,small,2,8.001
+D1,Usuniecie tresci (brak CASCADE — reczne czyszczenie),DELETE,mongo,small,3,7.172
+D2,Usuniecie profilu z historia (pull + delete_many),DELETE,mongo,small,1,3.012
+D2,Usuniecie profilu z historia (pull + delete_many),DELETE,mongo,small,2,2.41
+D2,Usuniecie profilu z historia (pull + delete_many),DELETE,mongo,small,3,2.411
+D3,Czyszczenie starej historii ogladania,DELETE,mongo,small,1,1.097
+D3,Czyszczenie starej historii ogladania,DELETE,mongo,small,2,1.063
+D3,Czyszczenie starej historii ogladania,DELETE,mongo,small,3,1.152
+D4,Usuniecie pozycji z my_list,DELETE,mongo,small,1,0.612
+D4,Usuniecie pozycji z my_list,DELETE,mongo,small,2,0.666
+D4,Usuniecie pozycji z my_list,DELETE,mongo,small,3,0.677
+D5,Usuniecie subskrypcji z platnosciami,DELETE,mongo,small,1,1.217
+D5,Usuniecie subskrypcji z platnosciami,DELETE,mongo,small,2,1.333
+D5,Usuniecie subskrypcji z platnosciami,DELETE,mongo,small,3,1.159
+D6,Masowe usuniecie uzytkownikow status=deleted,DELETE,mongo,small,1,1.101
+D6,Masowe usuniecie uzytkownikow status=deleted,DELETE,mongo,small,2,1.04
+D6,Masowe usuniecie uzytkownikow status=deleted,DELETE,mongo,small,3,1.064
+I1,Rejestracja uzytkownika (User+Profile+Subscription+relacje),INSERT,neo4j,small,1,40.583
+I1,Rejestracja uzytkownika (User+Profile+Subscription+relacje),INSERT,neo4j,small,2,11.513
+I1,Rejestracja uzytkownika (User+Profile+Subscription+relacje),INSERT,neo4j,small,3,8.172
+I2,Batch insert relacji WATCHED (1000),INSERT,neo4j,small,1,171.285
+I2,Batch insert relacji WATCHED (1000),INSERT,neo4j,small,2,164.578
+I2,Batch insert relacji WATCHED (1000),INSERT,neo4j,small,3,151.068
+I3,Dodanie serialu z drzewem (Content+Season+Episode+ACTED_IN),INSERT,neo4j,small,1,203.292
+I3,Dodanie serialu z drzewem (Content+Season+Episode+ACTED_IN),INSERT,neo4j,small,2,73.662
+I3,Dodanie serialu z drzewem (Content+Season+Episode+ACTED_IN),INSERT,neo4j,small,3,76.169
+I4,Batch insert wezlow Payment (1000),INSERT,neo4j,small,1,143.871
+I4,Batch insert wezlow Payment (1000),INSERT,neo4j,small,2,150.326
+I4,Batch insert wezlow Payment (1000),INSERT,neo4j,small,3,148.927
+I5,Dodanie relacji RATED z przeliczeniem avg_rating,INSERT,neo4j,small,1,102.021
+I5,Dodanie relacji RATED z przeliczeniem avg_rating,INSERT,neo4j,small,2,14.439
+I5,Dodanie relacji RATED z przeliczeniem avg_rating,INSERT,neo4j,small,3,14.187
+I6,Import Person z relacjami ACTED_IN (100 osob),INSERT,neo4j,small,1,46.415
+I6,Import Person z relacjami ACTED_IN (100 osob),INSERT,neo4j,small,2,18.515
+I6,Import Person z relacjami ACTED_IN (100 osob),INSERT,neo4j,small,3,17.485
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,neo4j,small,1,36.491
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,neo4j,small,2,4.795
+S1,Strona glowna (filtrowanie + sortowanie),SELECT,neo4j,small,3,3.957
+S2,Rekomendacje collaborative filtering (graph traversal),SELECT,neo4j,small,1,304.654
+S2,Rekomendacje collaborative filtering (graph traversal),SELECT,neo4j,small,2,175.175
+S2,Rekomendacje collaborative filtering (graph traversal),SELECT,neo4j,small,3,151.236
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,neo4j,small,1,95.882
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,neo4j,small,2,31.502
+S3,TOP 100 tresci wg ogladalnosci (ostatni miesiac),SELECT,neo4j,small,3,24.633
+S4,Wyszukiwanie po tytule (CONTAINS),SELECT,neo4j,small,1,32.14
+S4,Wyszukiwanie po tytule (CONTAINS),SELECT,neo4j,small,2,3.277
+S4,Wyszukiwanie po tytule (CONTAINS),SELECT,neo4j,small,3,2.856
+S5,Historia ogladania profilu (50 ostatnich relacji WATCHED),SELECT,neo4j,small,1,40.564
+S5,Historia ogladania profilu (50 ostatnich relacji WATCHED),SELECT,neo4j,small,2,4.315
+S5,Historia ogladania profilu (50 ostatnich relacji WATCHED),SELECT,neo4j,small,3,5.198
+S6,Filmografia osoby (ACTED_IN + DIRECTED + WROTE),SELECT,neo4j,small,1,34.198
+S6,Filmografia osoby (ACTED_IN + DIRECTED + WROTE),SELECT,neo4j,small,2,2.811
+S6,Filmografia osoby (ACTED_IN + DIRECTED + WROTE),SELECT,neo4j,small,3,2.719
+U1,Aktualizacja postepu ogladania (rel WATCHED),UPDATE,neo4j,small,1,29.503
+U1,Aktualizacja postepu ogladania (rel WATCHED),UPDATE,neo4j,small,2,5.294
+U1,Aktualizacja postepu ogladania (rel WATCHED),UPDATE,neo4j,small,3,4.836
+U2,Przeliczenie avg_rating (avg relacji RATED),UPDATE,neo4j,small,1,10.229
+U2,Przeliczenie avg_rating (avg relacji RATED),UPDATE,neo4j,small,2,8.095
+U2,Przeliczenie avg_rating (avg relacji RATED),UPDATE,neo4j,small,3,4.97
+U3,Masowa zmiana planu subskrypcji (500 wezlow),UPDATE,neo4j,small,1,28.518
+U3,Masowa zmiana planu subskrypcji (500 wezlow),UPDATE,neo4j,small,2,10.019
+U3,Masowa zmiana planu subskrypcji (500 wezlow),UPDATE,neo4j,small,3,8.568
+U4,Aktualizacja email uzytkownika,UPDATE,neo4j,small,1,14.03
+U4,Aktualizacja email uzytkownika,UPDATE,neo4j,small,2,2.599
+U4,Aktualizacja email uzytkownika,UPDATE,neo4j,small,3,4.831
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,neo4j,small,1,17.936
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,neo4j,small,2,2.452
+U5,Oznaczenie tresci jako nieaktywnej,UPDATE,neo4j,small,3,2.636
+U6,Masowa aktualizacja popularity_score (formula),UPDATE,neo4j,small,1,42.794
+U6,Masowa aktualizacja popularity_score (formula),UPDATE,neo4j,small,2,9.452
+U6,Masowa aktualizacja popularity_score (formula),UPDATE,neo4j,small,3,9.766
+D1,Usuniecie tresci z kaskada (DETACH DELETE + sezon/odcinki),DELETE,neo4j,small,1,8.487
+D1,Usuniecie tresci z kaskada (DETACH DELETE + sezon/odcinki),DELETE,neo4j,small,2,6.088
+D1,Usuniecie tresci z kaskada (DETACH DELETE + sezon/odcinki),DELETE,neo4j,small,3,6.218
+D2,Usuniecie profilu z historia (DETACH DELETE Profile),DELETE,neo4j,small,1,18.047
+D2,Usuniecie profilu z historia (DETACH DELETE Profile),DELETE,neo4j,small,2,5.887
+D2,Usuniecie profilu z historia (DETACH DELETE Profile),DELETE,neo4j,small,3,4.237
+D3,Czyszczenie starej historii (DELETE relacji WATCHED),DELETE,neo4j,small,1,68.238
+D3,Czyszczenie starej historii (DELETE relacji WATCHED),DELETE,neo4j,small,2,41.929
+D3,Czyszczenie starej historii (DELETE relacji WATCHED),DELETE,neo4j,small,3,42.337
+D4,Usuniecie relacji ADDED_TO_LIST,DELETE,neo4j,small,1,24.045
+D4,Usuniecie relacji ADDED_TO_LIST,DELETE,neo4j,small,2,5.909
+D4,Usuniecie relacji ADDED_TO_LIST,DELETE,neo4j,small,3,3.936
+D5,Usuniecie subskrypcji z platnosciami (DETACH DELETE),DELETE,neo4j,small,1,24.047
+D5,Usuniecie subskrypcji z platnosciami (DETACH DELETE),DELETE,neo4j,small,2,3.946
+D5,Usuniecie subskrypcji z platnosciami (DETACH DELETE),DELETE,neo4j,small,3,6.001
+D6,Masowe usuniecie userow status=deleted,DELETE,neo4j,small,1,27.97
+D6,Masowe usuniecie userow status=deleted,DELETE,neo4j,small,2,7.874
+D6,Masowe usuniecie userow status=deleted,DELETE,neo4j,small,3,6.196
